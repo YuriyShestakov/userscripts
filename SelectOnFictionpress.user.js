@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name        SelectOnFictionpress
-// @namespace   http://
+// @description Allow select on www.fictionpress.com website.
+// @namespace   http://test
 // @include     http://www.fictionpress.com/*
 // @include     https://www.fictionpress.com/*
 // @version     1
@@ -9,5 +10,7 @@
 // ==/UserScript==
 
 $(document).ready(function () {
-    $('.storytextp').css('-moz-user-select', 'auto')
+    setTimeout(function () {
+        $('.storytextp').css('-moz-user-select', 'auto');
+    }, 1000);
 });
