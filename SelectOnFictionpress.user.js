@@ -11,6 +11,9 @@
 
 $(document).ready(function () {
     setTimeout(function () {
-        $('.storytextp').css('-moz-user-select', 'auto');
+        $('.storytextp').css({
+            "-moz-user-select": "auto",
+            "-webkit-user-select": "auto"
+        });
     }, 1000);
 });
